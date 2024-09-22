@@ -1,0 +1,39 @@
+public class Pattern {
+
+    public static void main(String[] args) {
+        //Segitiga Kanan
+        int i, j, row = 6;
+        for (i = 0; i < row; i++) {
+            for (j = 0; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        
+        System.out.println("----------------");
+         System.out.println(" ");
+         //Segitiga Kiri
+        int a, c, rows = 6;
+        for (a = 0; a < rows; a++) {
+            for (c = 2 * (rows - a); c >= 0; c--){
+                System.out.print(" ");
+            }
+            for (c = 0; c <= a; c++) {
+                System.out.print("* ");
+            }
+             System.out.println();
+        }
+        
+        System.out.println("----------------");
+         System.out.println(" ");
+         //Segitiga ke bawa
+        int rowss = 7;
+        for (int q = rowss - 1; q >= 0; q--) {
+            for (int e = 0; e <= q; e++){
+                System.out.print("*"+" ");
+            }
+             System.out.println();
+        }
+         System.out.println("----------------");
+    }
+}
